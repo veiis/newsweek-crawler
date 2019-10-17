@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font: 20px 'Avenir', sans-serif;
+}
+.container {
+    margin: 0 auto;
+    width: 80%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.container .top-section {
+    padding: 20px;
+    background: #00BCD4;
+}
+.container .top-section input {
+    font: 20px 'Avenir', sans-serif;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+}
+.container .top-section input:focus {
+    border: none;
+    outline: none;
+}
+select {
+    font: 20px 'Avenir', sans-serif;
+    padding: 10px 20px;
+    border: none;
+    margin: 10px 10px 0;
+    text-align: center;
+    width: 31%;
+}
+.news {
+    border: 1px solid #448AFF;
+    border-top: none;
+    color: #fff;
+    font: 16px sans-serif;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.news h3 a {
+    color: #fff;
+    text-decoration: none;
+}
+.news-item {
+    margin: 10px 20px;
+    background: #0097A7;
+    border-bottom: 3px solid darkslategray;
+    padding: 20px;
+    text-align: left;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-item div h3 {
+    font: 20px sans-serif;
+    margin-bottom: 10px;
+}
+.news-item div span a {
+    color: #FFEB3B;
+}
+.right {
+    margin: 5px;
+    padding: 5px;;
+}
+.news-item .left img {
+    text-align: center !important;
+    display: block;
+    align-items: center ;
+}
+.right span {
+    background: #fff;
+    justify-content: end;;
+    padding: 5px;
+    border-radius: 3px;
+    margin:10px 10px 10px 0;
+    color: gray;
+    text-align: center;
+    display: inline-block;
+}
+.right p {
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .news {
+        flex-direction: row;
+    }
+    .news-item {
+        width: 80%;
+    }
+    .news-item .left img{
+        width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 900px) {
+    .news-item {
+        width: 80%;
+        flex-direction: row;
+    }
+  }
